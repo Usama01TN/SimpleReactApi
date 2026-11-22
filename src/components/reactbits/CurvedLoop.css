@@ -1,0 +1,27 @@
+.curved-loop-jacket {
+  width: 100%;
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.curved-loop-svg {
+  display: block;
+  width: 100%;
+  aspect-ratio: 100 / 12;
+  overflow: visible;
+  user-select: none;
+  font-size: clamp(2.6rem, 5vw, 5.2rem);
+  fill: currentColor;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  -webkit-user-select: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .curved-loop-jacket { cursor: default !important; }
+}

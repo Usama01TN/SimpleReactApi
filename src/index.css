@@ -1,0 +1,36 @@
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #25372f;
+  background: #f5f3ec;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --pine: #1e352d;
+  --pine-deep: #172a23;
+  --sage: #a6b29b;
+  --sage-light: #dce1d4;
+  --cream: #f5f3ec;
+  --paper: #fffefa;
+  --ink: #26372f;
+  --muted: #7b8178;
+  --line: #deded5;
+  --orange: #d88a60;
+  --serif: 'Playfair Display', Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, select, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .65; }
+::selection { color: #fff; background: #6d806e; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
